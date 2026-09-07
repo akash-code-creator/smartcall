@@ -9,14 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # Audio playback & speech synthesis
+
   flutter_tts: ^4.2.0
   audioplayers: ^6.1.0
   record: 5.1.2
   path_provider: ^2.1.5
-  # Persistence & Icons
   shared_preferences: ^2.3.5
-  flutter_feather_icons: ^2.0.0+1
+
+  # New Feather package: compatible with current Flutter
+  feather_icon_font: ^1.0.0
+
   permission_handler: ^11.4.0
   intl: ^0.20.2
 
@@ -24,9 +26,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-
-dependency_overrides:
-  record_platform_interface: 1.1.0
 
 flutter:
   uses-material-design: true
