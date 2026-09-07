@@ -12,13 +12,13 @@ dependencies:
 
   flutter_tts: ^4.2.0
   audioplayers: ^6.1.0
-  record: 5.1.2
+
+  # Updated recorder package: compatible internal packages
+  record: ^6.2.1
+
   path_provider: ^2.1.5
   shared_preferences: ^2.3.5
-
-  # New Feather package: compatible with current Flutter
   feather_icon_font: ^1.0.0
-
   permission_handler: ^11.4.0
   intl: ^0.20.2
 
