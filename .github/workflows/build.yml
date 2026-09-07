@@ -22,10 +22,10 @@ jobs:
         with:
           channel: 'stable'
           
-      - name: Force Upgrade Dependencies
+      - name: Resolve Dependencies
         run: |
-          flutter pub clean
-          flutter pub upgrade --major-versions
+          flutter clean
+          flutter pub get
           
       - name: Build Release APK
         run: flutter build apk --release --no-tree-shake-icons
