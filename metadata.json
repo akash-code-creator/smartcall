@@ -1,0 +1,6 @@
+{
+  "name": "SmartCall",
+  "description": "Automated Offline Voice Response System with hardware button triggers and AI voice note studio.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

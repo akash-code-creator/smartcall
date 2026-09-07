@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(30, 41, 59, 0.35);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(51, 65, 85, 0.55);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.35);
+  }
+
+  .glass-panel-active {
+    background-color: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.2), inset 0 0 16px rgba(99, 102, 241, 0.1);
+  }
+
+  .glass-card-hover {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .glass-card-hover:hover {
+    background-color: rgba(30, 41, 59, 0.5);
+    border-color: rgba(99, 102, 241, 0.35);
+    transform: translateY(-1px);
+  }
+
+  .neon-glow {
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.35), 0 0 30px rgba(99, 102, 241, 0.2);
+  }
+
+  .neon-glow-emerald {
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.35), 0 0 30px rgba(16, 185, 129, 0.2);
+  }
+
+  .neon-glow-lg {
+    box-shadow: 0 0 40px rgba(99, 102, 241, 0.5);
+  }
+
+  .neon-text-glow {
+    text-shadow: 0 0 14px rgba(99, 102, 241, 0.6);
+  }
+
+  .bg-cyber-gradient {
+    background: linear-gradient(135deg, #6366F1 0%, #4338CA 100%);
+  }
+
+  .bg-frosted-radial {
+    background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  }
+}
+
+/* Frequency pulse animation for audio visualizers */
+@keyframes frequency-pulse {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1); }
+}
+
+.waveform-bar {
+  animation: frequency-pulse 1.2s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+/* Custom scrollbar for frosted glass look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.5);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.6);
+}
+
+/* Material symbol support */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
