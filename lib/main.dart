@@ -8,7 +8,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:record/record.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:feather_icon_font/feather_icon_font.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
