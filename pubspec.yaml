@@ -27,3 +27,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  dependency_overrides:
+  record_platform_interface: 1.1.0
+  record: 5.1.2
